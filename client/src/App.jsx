@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div className='bg-info'>
       <BrowserRouter>
         <Routes>
           <Route path='/home' element={<Home />}></Route>
