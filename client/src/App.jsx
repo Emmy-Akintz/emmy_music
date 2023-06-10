@@ -2,10 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import home from './pages/home'
-import search from './pages/search'
-import library from './pages/library'
-import profile from './pages/profile'
+import Home from './pages/home'
+import Search from './pages/search'
+import Library from './pages/library'
+import Profile from './pages/profile'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,10 +14,10 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/home' element={<home />}></Route>
-          <Route path='/search' element={<search />}></Route>
-          <Route path='/library' element={<library />}></Route>
-          <Route path='/' element={<profile />}></Route>
+          <Route path='/home' element={<Home />}></Route>
+          <Route path='/search' element={<Search />}></Route>
+          <Route path='/library' element={<Library />}></Route>
+          <Route path='/' element={<Profile />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
